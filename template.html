@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template</title>
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <style>
+        body {
+            height: 99.9%;
+            width: 100%;
+            margin: 0 0;
+        }
+
+        html {
+            height: 11in;
+            width: 8.5in;
+        }
+
+        .partition {
+            height: 50%;
+            width: 100%;
+            background-image: url('https://filebin.net/ve4zlrfgapeoobsb/certdesign.jpg?t=49t4pq55');
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .partition.bordered {
+            border-bottom: 1px black dashed;
+        }
+
+        .partition > h2 {
+            font-family: 'Allerta';
+            position: absolute;
+            top: 44%;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="partition bordered">
+        <h2>{{ name1 }}</h2>
+    </div>
+    <div class="partition">
+        <h2>{{ name2 }}</h2>
+    </div>
+</body>
+</html>
